@@ -1,0 +1,15 @@
+.carrusel{
+    width: 100%;
+    overflow: scroll;
+    display: flex ;
+    flex-wrap: nowrap;
+}
+.itemcarrusel{
+    width: 200px;
+    margin: 20px;
+    display: inline-block;
+}
+.itemcarrusel img{
+    width: 200px;
+    height: auto;
+}
