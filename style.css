@@ -3,6 +3,9 @@
 @import "/style/menu.css";
 @import "/style/hero.css";
 @import "/style/carrusel.css";
+@import "/style/btn.css";
+@import "/style/cursos.css";
+@import "/style/proyectos.css";
 *{
     margin: 0;
     padding: 0;

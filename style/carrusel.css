@@ -5,11 +5,36 @@
     flex-wrap: nowrap;
 }
 .itemcarrusel{
-    width: 200px;
+    width: 300px;
     margin: 20px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: rgba(50, 255, 126,1.0);
+    transition: 2s;
+    
 }
-.itemcarrusel img{
-    width: 200px;
-    height: auto;
+.itemcarrusel p{
+    display: none;
+    font-size: 2em;
 }
+.itemcarrusel i{
+    font-size: 300px;
+    transition: 2s;
+}
+.itemcarrusel:hover p{
+    display: block;
+}
+.itemcarrusel:hover i{
+    font-size: 250px;
+}
+.itemcarrusel:hover p{
+   background: rgba(50, 255, 126,1.0);
+   color: white;
+
+}
+

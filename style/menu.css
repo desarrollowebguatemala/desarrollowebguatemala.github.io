@@ -52,8 +52,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100px;
-        height: 100px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
         background-color: rgba(50, 255, 126,0.8);
         box-shadow: 2px 3px 5px gray;
