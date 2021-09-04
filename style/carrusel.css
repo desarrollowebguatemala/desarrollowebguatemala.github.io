@@ -37,4 +37,10 @@
    color: white;
 
 }
-
+.carrusel i{
+    font-size: 3.5em;
+    color: green;
+}
+.card{
+    margin: 10px;
+}

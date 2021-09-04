@@ -5,59 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/86e4670193.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
+
     <title>Desarollo web en Guatemala</title>
 </head>
 <body>
     <header>
-        <p>Developer Guatemala</p>
-        <div class="menu" id="menu">
-            <ul class="menu-ul">
-                <li><a class="menu-a"href="#proyectos">Proyectos</a></li>
-                <li><a class="menu-a"href="/blog">Blog</a></li>
-                <li><a class="menu-a"href="#contacto">Contacto</a></li>
-            </ul>
-        </div>
+        <nav>
+            <div class="nav-wrapper">
+              <a href="#!" class="brand-logo"><i class="material-icons">keyboard</i></a>
+              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="#acerca">Acerca de mi</a></li>
+                <li><a href="#tech">Tecnologias</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+              </ul>
+            </div>
+          </nav>
+        
+          <ul class="sidenav" id="mobile-demo">
+            <li><a href="#acerca">Acerca de mi</a></li>
+            <li><a href="#tech">Tecnologias</a></li>
+            <li><a href="#cursos">Cursos</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+          </ul>
     </header>
     <section class="hero">
         <h1>Desarrollador Web en Guatemala</h1>
         <p id="ejemplo1"></p>
-        <a href="https://gt.linkedin.com/in/seo-guatemala" Class="btn">Contactar</a>
+        
+        <a href="https://gt.linkedin.com/in/seo-guatemala">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Contactar
+                <i class="material-icons right">send</i>
+              </button>
+        </a>
     </section>
-    <section class="container">
-       <h2>Hola Soy Samuel Castillo y soy desarrollador web en Guatemala...</h2>
-       <p>Y en los ultimos años me he dedicado a desarrollar mis capacidades y experiencia con proyectos propios
-           montando <b>StartUps</b>, trabajado en empresas como <b>Desarrolador Frontend</b> y <b>Backend</b>, como por ejemplo en Points, 
-           La posada de los Muertos y Ochochil.
+    <section >
+        <div class="row">
+            <div class="col s12 m6">
+              <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                  <h2 class="card-title" id="acerca">Hola Soy Samuel Castillo y soy desarrollador web en Guatemala...</h2>
+                  <p>Y en los ultimos años me he dedicado a desarrollar mis capacidades y experiencia con proyectos propios
+                    montando <b>StartUps</b>, trabajado en empresas como <b>Desarrolador Frontend</b> y <b>Backend</b>, como por ejemplo en Points, 
+                    La posada de los Muertos y Ochochil.</p>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+       <h2></h2>
+       <p>
        </p>
     </section>
-    <section class="carrusel">
-        <div class="itemcarrusel">
-            <i class="fab fa-html5"></i>
-            <p>HTML</p>
+    <section class="carrusel" id="tech">
+        <div class="card">
+            <div class="card-content">
+                <i class="fab fa-html5"></i>
+                <span class="card-title">HTML</span>
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+                <i class="fab fa-css3-alt"></i>
+                <span class="card-title">CSS</span>
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+                <i class="fab fa-js-square"></i>
+                <span class="card-title">Javascript</span>
+              
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+                <i class="fab fa-node"></i>
+                <span class="card-title">NodeJS</span>
+              
+            </div>
+          </div>
+          <div class="card">
+          <div class="card-content">
+            <i class="fab fa-react"></i>
+            <span class="card-title">ReactJs</span>
         </div>
-        <div class="itemcarrusel">
-            <i class="fab fa-css3-alt"></i>
-            <p>Css</p>
-        </div>
-        <div class="itemcarrusel">
-            <i class="fab fa-js-square"></i>
-            <p>JavaScript</p>
-        </div>
-       
+      </div>
+      
     </section>
     <section class="container">
-        <h2>Desarrollador Backend y Frontend en Guatemala</h2>
+        <h2 class="h3">Desarrollador Backend y Frontend en Guatemala</h2>
         <p>Dentro de mis conocimientos de <b>desarrollo web</b> tanto en el <b>frontend</b> como el <b>Backend</b>
         me encuentro <b>certificado por Platzi</b> como <b>Fullstack Developer</b> especializado en <b>JavaScript</b>.
         </p>
         <h3>Ademas tengo la certificacion de Marketing Digital, Productividad y UX de Google</h3>
     </section>
-    <section class="cursos">
-        <div class="curso">
+    <section class="cursos" id="cursos">
+        <div class="card">
             
-            <div class="cursotexto">
-                <h3 class="titulo-curso">FullStack especializado en JavaScript</h3>
+            <div class="card-content">
+                <h3 class="card-title">FullStack especializado en JavaScript</h3>
                 <p >
                     <ul class="descripcioncurso">
                         <li>HTML</li>
@@ -71,8 +123,9 @@
             </div>
         
         </div>
-        <div class="curso">
-            <h3 class="titulo-curso">Productividad</h3>
+        <div class="card">
+            <div class="card-content">
+            <h3 class="card-title">Productividad</h3>
             <p class="descripcioncurso">
                 <ul class="descripcioncurso">
                     <li>Productividad orientada a objetivos</li>
@@ -80,8 +133,10 @@
                 </ul>
             </p>
         </div>
-        <div class="curso">
-            <h3 class="titulo-curso">Marketing Digital</h3>
+        </div>
+        <div class="card">
+            <div class="card-content">
+            <h3 class="card-title">Marketing Digital</h3>
             <p class="descripcioncurso">
                 <ul class="descripcioncurso">
                     <li>Segmentacion en base a interacciones</li>
@@ -90,8 +145,10 @@
                 </ul>
             </p>
         </div>
-        <div class="curso">
-            <h3 class="titulo-curso">Gestion de Proyectos</h3>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3 class="card-title">Gestion de Proyectos</h3>
             <p class="descripcioncurso">
                 <ul class="descripcioncurso">
                     <li>Planificacion, seguimiento y ejecucion de proyectos</li>
@@ -100,31 +157,61 @@
                 </ul>
             </p>
         </div>
+            </div>
+            
     </section>
     <section id="proyectos" class="container">
-        <h2>Mis proyectos como desarrollador web incluyen web en Guatemala y proyectos internacionales.</h2>
-        <div class="proyecto">
-            <h3>CMS con NojeJS</h3>
-            <img src="https://samuelcastillogt.github.io/images/samuel%20castillo.png" alt="">
-            <p>Gestor de cotenidos con renderizado desde el servidor.</p>
+        <h2 class="h3">Mis proyectos como desarrollador web incluyen web en Guatemala y proyectos internacionales.</h2>
+        <div class="col s12 m7">
+        <div class="card">
+            <div class="card-image">
+                <img src="https://samuelcastillogt.github.io/images/samuel%20castillo.png" alt="desarrollador web en guatemala">
+              </div>   
+            <div class="card-content">
+                <h3 class="card-title">CMS con NojeJS</h3>
+                <p>Gestor de cotenidos con renderizado desde el servidor.</p>
+            </div>
+            <div class="card-action ">
+                <a href="#" class="waves-effect waves-light btn">Ver el codigo</a>
+              </div>
         </div>
+        </div>
+        <div class="col s12 m7">
+            <div class="card">
+                <div class="card-image">
+                    <img src="/src/desarrollo web guatemala.png" alt="desarrollador web en guatemala">
+                  </div>   
+                <div class="card-content">
+                    <h3 class="card-title">PWA Marketplace</h3>
+                    <p>Sitio web de clasificados instalable desde el navegador.</p>
+                </div>
+                <div class="card-action ">
+                    <a href="#" class="waves-effect waves-light btn">Ver el codigo</a>
+                  </div>
+            </div>
+            </div>
+            <div class="col s12 m7">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/src/paginas web guatemala.png" alt="paginas web en guatemala">
+                      </div>   
+                    <div class="card-content">
+                        <h3 class="card-title">Revista inmobiliaria</h3>
+                        <p>Montado en NodeJS y con funciones de servidor y manejo de CRM desde la misma pagina.</p>
+                    </div>
+                    <div class="card-action ">
+                        <a href="#" class="waves-effect waves-light btn">Ver el codigo</a>
+                      </div>
+                </div>
+                </div>
     </section>
-    <div id="ham">
-        <img src="/src/menu.png" alt="" id="abrir">
-        <img src="/src/close.png" alt="" id="cerrar" class="hidden">
-    </div>
-    <div class="menu-movil hidden" id="menu-movil">
-        <ul class="menu-ul">
-            <li><a class="menu-a"href="#proyectos">Proyectos</a></li>
-            <li><a class="menu-a"href="/blog">Blog</a></li>
-            <li><a class="menu-a"href="#contacto">Contacto</a></li>
-        </ul>
-    </div>
+ 
     <footer>
         <p>Diseño y desarrollo <a href="https://samuelcastillogt.github.io/">Samuel Castillo</a></p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/jquery.typeit/3.0.1/typeit.min.js"></script>       
+        <script src="https://cdn.jsdelivr.net/jquery.typeit/3.0.1/typeit.min.js"></script> 
+        <script src="/src/js/materialize.js"></script>      
    <script src="/src/index.js" type="module"></script>
 </body>
 </html>

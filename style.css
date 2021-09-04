@@ -1,9 +1,7 @@
-@import "/style/header.css";
+
 @import "/style/footer.css";
-@import "/style/menu.css";
 @import "/style/hero.css";
 @import "/style/carrusel.css";
-@import "/style/btn.css";
 @import "/style/cursos.css";
 @import "/style/proyectos.css";
 *{
@@ -23,4 +21,7 @@ body{
     flex-direction: column;
     margin: 0 auto;
     padding: 10px;
+}
+.h3{
+    font-size: 1.3em;
 }
