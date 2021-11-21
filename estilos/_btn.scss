@@ -1,0 +1,14 @@
+.btn{
+    @include centrado;
+    background-color: $rosadito;
+    color: $fontColor;
+    padding: $padding2;
+    text-decoration: none;
+    border-radius: $border-radius6;
+    transition: 2s;
+    
+
+}
+.btn:hover{
+    background-color: $rosaditodark;
+}

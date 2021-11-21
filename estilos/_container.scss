@@ -1,0 +1,10 @@
+.container{
+    @include centrado;
+    margin: 0 auto;
+    width: $regularWith;
+}
+.container-card{
+    box-shadow: $sombra;
+    padding: $padding;
+    border-radius: $border-radius6;
+}
